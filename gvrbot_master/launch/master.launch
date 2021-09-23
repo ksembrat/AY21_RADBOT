@@ -25,7 +25,7 @@
 
   <!--include file="$(find gvrbot_camera)/launch/rs_d435_camera.launch"/-->
 
-<!--  <include file="$(find usma_remote_interface)/launch/remote.launch"/>-->
+  <!--<include file="$(find usma_remote_interface)/launch/remote.launch"/>-->
 
   <!--include file="$(find gvrbot_web_server)/launch/web_server.launch"/-->
 
