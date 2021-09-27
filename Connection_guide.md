@@ -1,4 +1,6 @@
-ROS PC Pass: RrcCmp2@
+BRIX01 On-board Computer: RrcCmp2@
+
+This guide covers 
 
 1. Connect to GVRBOT wifi
 	Pass: modern0325

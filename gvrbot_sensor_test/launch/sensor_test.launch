@@ -2,7 +2,7 @@
 <launch>
 
   <!-- Spawn Radbot -->
-  <include file="$(find gvrbot_bringup)/launch/bringup.launch"/>  
+  <include file="$(find gvrbot_master)/launch/master.launch"/>  
   <include file="$(find gvrbot_viz)/launch/view_robot.launch"/>
 
   <include file="$(find microstrain_mips)/launch/microstrain.launch">

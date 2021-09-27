@@ -3,7 +3,6 @@
 <launch>
 
     <node pkg="web_video_server" name="web_video_server" type="web_video_server" >
-       <!-- param name="address" value="10.212.149.70 "/> -->
         <param name="addres" value="10.212.149.70 "/>
     </node>
 
