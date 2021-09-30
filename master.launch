@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<!-- ======================== MAIN ARGUMENTS ======================= -->
+
+<!-- SENSOR OPTIONS -->
+	<arg name="run_lidar" default="false"/>
+	<arg name="run_depth" default="false"/>
+	<arg name="run_kromek" default="false"/>
+
+<!-- TELEOP OPTIONS -->
+    
+
+<!-- MAPPING OPTIONS -->
+    <arg name="run_web_server" default="false"/>
+
+<!-- VISUALIZATION OPTIONS  -->
+    <arg name="run_rviz" default="false"/> 
+
+<!-- ======================== TRANSFORMS ======================= -->
+
+<!--<node pkg="tf2_ros" type="static_transform_publisher" name="base_link_mavrosFix_broadcaster" args="0 0 0 0 0 0 1 local_origin_ned fcu" /> 
+-->
+<!-- TranBaseLink - Radar -->
+<!-- <node pkg="tf" type="static_transform_publisher" name="base_link_ti_mmwave_pcl_broadcaster" args="0 0 0 0 0 0 1 base_link ti_mmwave_pcl 100" />
+-->
+<!-- TranBaseLink - Realsense -->
+<!-- <node pkg="tf" type="static_transform_publisher" name="base_link_realsenseD435_broadcaster" args="0.180 0.0175 -0.1075 -0.5 -0.5 0.5 0.5 base_link d435 100" />
+ -->
+
+<!-- ======================== LAUNCH DEPENDENCIES ======================= -->
+
+<!-- SENSOR FILES -->
+<include if="$(arg run_depth)" file="launch/depth.launch"/>
+<include if="$(arg run_lidar)" file="launch/os1.launch"/>
+<include if="$(arg run_kromek)" file="launch/kromek.launch"/>
+
+<!-- MAPPING FILES -->
+<group if="$(arg run_web_server)">
+    <node name="web_video_server"  pkg="web_video_server" type="web_video_server"/>
+    <param name="address" value="10.212.149.70 "/>
+</group>
+
+<!-- VISUALIZATION FILES -->
+<group if="$(arg run_rviz)">
+    <node name="rviz" pkg="rviz" type="rviz"  args="-d /home/AY22_RADBOT/rviz/gmapping.rviz" output="screen"/>
+    <!--
+    <arg name="config" default="base" />
+    <arg name="env_runner" value="$(eval 'env_run' if not optenv('OS', 'unknown').lower().startswith('windows') else 'env_run.bat')" /> 
+    <arg name="env_runner" value="env_run" /> 
+    <param name="robot_description"
+        command="$(find gvrbot)/scripts/$(arg env_runner)
+                    $(find gvrbot)/urdf/configs/$(arg config)
+                    $(find xacro)/xacro $(find gvrbot)/urdf/gvrbot.urdf.xacro"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+-->
+</group>
+
+<!-- ======================== OTHER ======================= -->
+
+<!-- RECORD TEMP BAG FILE -->
+ <node name="rosbag_record_ID" pkg="rosbag" type="record"
+        args="record -O /home/AY22_RADBOT/data/testing/temp/tf"/>
+</launch>
+
+<!-- ======================== ARCHIVE ======================= -->
+<!--
+<include if="$(arg run_fcu)" file="$(find fcu_translation_mavros)/launch/pixhawk_fcu.launch" />
+
+<group if="$(arg run_joy)">
+    <rosparam>
+        joy_node/dev: /dev/input/js0
+        joy_node/autorepeat_rate: 10.0
+    </rosparam>
+    <node pkg="joy" type="joy_node" name="joy_node"/>
+</group>
+
+<group if="$(arg run_system_health)">
+    <! Current Options: resource_monitor, battery_voltage, sensor_px4_imu, sensor_ouster, sensor_t265_lower, sensor_t265_upper, nav_aloam, nav_vision_pose, nav_px4_odom, nav_m3_odom, nav_m3_px4_odom_comp, control_bbx_pts
+    <rosparam> System_Health_Monitor/topic_list: [resource_monitor, battery_voltage, sensor_px4_imu, nav_m3_px4_odom_comp] </rosparam>
+    <include file="$(find system_health_monitor)/launch/system_health_monitor.launch">
+        <arg name="node_start_delay" value="15.0" />
+    </include>
+</group>
+
+
+<include if="$(arg run_lsn)" file="$(find landing_surface_normal)/launch/landing_surface_normal.launch"/>
+
+<include if="$(arg run_robotleg)" file="$(find roboleg_flight_planner)/launch/roboleg_flight_planner.launch"/>
+-->

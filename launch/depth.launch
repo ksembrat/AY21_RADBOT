@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<launch>
+
+ <arg name="name"                        default="gvrbot" />
+    <arg name="realsense_manager"           default="realsense2_camera_manager"/>
+    <!-- load vehicle params -->
+    <group ns="$(arg name)">
+        <!-- forward realsense (for some reason it doesn't like to be remapped) -->
+        <node         
+            name    ="vision_forward" 
+            pkg     ="topic_tools" 
+            type    ="relay"
+            args    ="camera/t265/odom/sample mavros/realsense/out" />
+        <node pkg="nodelet" type="nodelet" name="$(arg realsense_manager)" args="manager" output="screen"/>
+        <!-- realsense settings -->
+        <arg name="d435_serial_no"           default=""/>
+        <arg name="json_file_path"      default=""/>
+        
+        <arg name="initial_reset"         default="true"/>
+        <arg name="unite_imu_method"      default=""/>
+        <!-- d435 -->
+        <arg name="color_width"               default="640"/>
+        <arg name="color_height"              default="480"/>
+        <arg name="depth_width"               default="640"/>
+        <arg name="depth_height"              default="480"/>
+        <arg name="clip_distance"             default="-2"/>
+        <arg name="infra_fps"                 default="90"/>
+        <group ns="camera/d435">
+          <include file="$(find realsense2_camera)/launch/includes/nodelet.launch.xml">
+            <arg name="serial_no"             value="$(arg d435_serial_no)"/>
+            <arg name="tf_prefix"             value="$(arg name)/d435"/>
+            <arg name="initial_reset"         value="$(arg initial_reset)"/>
+            <arg name="align_depth"           value="true"/>
+            <arg name="filters"               value="pointcloud"/>
+            <arg name="color_width"           value="$(arg color_width)"/>
+            <arg name="color_height"          value="$(arg color_height)"/>
+            <arg name="depth_width"           value="$(arg depth_width)"/>
+            <arg name="depth_height"          value="$(arg depth_height)"/>
+            <arg name="clip_distance"         value="$(arg clip_distance)"/>
+            <arg name="infra_fps"             value="$(arg infra_fps)"/>
+            <arg name="manager"               value="$(arg realsense_manager)" />
+          </include>
+          <node
+            pkg="tf2_ros"
+            type="static_transform_publisher"
+            name="$(arg name)2d435"
+            args="
+                0.180 0.0175 -0.1075
+                0 1.57 0
+                base_link
+                $(arg name)/d435_link" />
+        </group>
+    </group>
+
+
+
+
+
+
+<!--   <arg name="device_type_camera1"    		default="d435"/>
+  <arg name="serial_no_camera1"    			default="102422072758"/>
+  <arg name="camera1"              			default="d435_lower"/>
+  <arg name="tf_prefix_camera1"         default="$(arg camera1)"/>
+  <arg name="initial_reset"             default="false"/>
+  <arg name="enable_fisheye"            default="false"/>
+  <arg name="color_width"               default="640"/>
+  <arg name="color_height"              default="480"/>
+  <arg name="depth_width"               default="640"/>
+  <arg name="depth_height"              default="480"/>
+  <arg name="clip_distance"             default="-2"/>
+  <arg name="topic_odom_in"             default="odom_in"/>
+  <arg name="calib_odom_file"           default=""/>
+
+  <group ns="$(arg camera1)">
+    <include file="$(find realsense2_camera)/launch/includes/nodelet.launch.xml">
+      <arg name="device_type"           value="$(arg device_type_camera1)"/>
+      <arg name="serial_no"             value="$(arg serial_no_camera1)"/>
+      <arg name="tf_prefix"		          value="$(arg tf_prefix_camera1)"/>
+      <arg name="initial_reset"         value="$(arg initial_reset)"/>
+      <arg name="align_depth"           value="true"/>
+      <arg name="filters"               value="pointcloud"/>
+      <arg name="color_width"           value="$(arg color_width)"/>
+      <arg name="color_height"          value="$(arg color_height)"/>
+      <arg name="depth_width"           value="$(arg depth_width)"/>
+      <arg name="depth_height"          value="$(arg depth_height)"/>
+      <arg name="clip_distance"         value="$(arg clip_distance)"/>
+      <arg name="depth_fps"             value="15"/>
+    </include>
+  </group> -->
+
+  <!-- RealSense package does not currently (06/15/21) support tf2_ros -->
+  <!-- ... name="childFrameID_to_frameID" args="coordinates of child with respect to frame" ... (arg frameID ... arg childFrameID) -->
+<!--   <node pkg="tf" type="static_transform_publisher" name="t265_to_d400" args="-0.00186 0.0085 -0.025 0 0 0 /$(arg tf_prefix_camera1)_link /$(arg tf_prefix_camera2)_link 100"/> -->
+</launch>
