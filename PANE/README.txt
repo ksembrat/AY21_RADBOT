@@ -1,1 +1,1 @@
-FOlder used to store PANE materials
+Folder used to store PANE materials
