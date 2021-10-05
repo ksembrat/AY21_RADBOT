@@ -9,11 +9,12 @@
 	<arg name="run_depth" default="false"/>
 	<arg name="run_kromek" default="false"/>
 
-<!-- TELEOP OPTIONS -->
-    
+<!-- CONTROL OPTIONS -->
+    <arg name="run_teleop" default="false"/>
 
 <!-- MAPPING OPTIONS -->
     <arg name="run_web_server" default="false"/>
+    <arg name="run_cartographer" default="false"/>
 
 <!-- VISUALIZATION OPTIONS  -->
     <arg name="run_rviz" default="false"/> 
@@ -40,6 +41,13 @@
 <group if="$(arg run_web_server)">
     <node name="web_video_server"  pkg="web_video_server" type="web_video_server"/>
     <param name="address" value="10.212.149.70 "/>
+</group>
+
+<group if="$(arg run_cartographer)">
+</group>
+
+<!-- CONTROL FILES -->
+<group if="$(arg run_teleop)">
 </group>
 
 <!-- VISUALIZATION FILES -->
