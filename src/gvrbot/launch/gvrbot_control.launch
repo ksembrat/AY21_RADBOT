@@ -1,0 +1,23 @@
+<launch>
+
+  <!-- Start the Astra 3d Sensor and RGB Camera 
+  <include file="$(find gvrbot)/launch/astra_3d_sensor.launch"/>
+-->
+  <!-- Start the Xbox 360 controller -->
+  <include file="$(find gvrbot)/launch/xbox360_teleop.launch"/>
+
+
+  <!-- Start the Velodyne 32E -->
+  <include file="$(find gvrbot)/launch/32e_points.launch.launch"/>
+
+  <!-- Start the transform publisher -->
+  <include file="$(find gvrbot)/launch/temp_tf.launch"/>
+
+  <!-- Start rviz for vizualization
+  <include file="$(find gvrbot)/launch/gvrbot_viz.launch"/>
+
+   -->
+
+
+
+</launch>
