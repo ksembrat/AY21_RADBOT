@@ -5,7 +5,7 @@
 <!-- ======================== MAIN ARGUMENTS ======================= -->
 
 <!-- SENSOR OPTIONS -->
-	<arg name="run_lidar" default="false"/>
+	<arg name="run_lidar" default="true"/>
 	<arg name="run_depth" default="false"/>
 	<arg name="run_kromek" default="false"/>
 
@@ -34,7 +34,7 @@
 
 <!-- SENSOR FILES -->
 <include if="$(arg run_depth)" file="launch/depth.launch"/>
-<include if="$(arg run_lidar)" file="launch/os1.launch"/>
+<include if="$(arg run_lidar)" file="src/velodyne/velodyne_pointcloud/launch/VLP16_points.launch"/>
 <include if="$(arg run_kromek)" file="launch/kromek.launch"/>
 
 <!-- MAPPING FILES -->

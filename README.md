@@ -46,9 +46,17 @@ Ubuntu Version: 16.04
 
 ## Dependencies 
     velodyne_description: 
-    sudo apt-get install ros-melodic-velodyne-description 
+    sudo apt-get install ros-melodic-velodyne
     realsense2-description: 
     sudo apt-get install ros-melodic-realsense2-description
+
+## Velodyne Lidar (VLP16 Puck)
+    IP Address: 192.168.1.201
+    Subnet Mask: 255.255.255.0
+    Default Gateway: 192.168.1.111
+    Data Port: 2368
+    S/N: AE17711588
+    MAC: 60-76-88-10-2d-44
 
 ## Connection Guide
 BRIX01 On-board Computer: RrcCmp2@
