@@ -1,54 +1,50 @@
 # AY22_RADBOT
+ROS Version: Melodic  
+Ubuntu Version: 18.04 
 
 ## Package Descriptions
-    01. gvrbot_master
-        -> Master control point. Includes the launch file to launch all other launch files.
-    02. gvrbot_camera
-        -> Launch file for D435 realsense depth camera
-    03. gvrbot_lidar
-        -> Launch file for Velodyne Lidar
-    04. gvrbot_control
-        -> Manual control with Xbox360 controller
-    05. gvrbot_msgs
-        -> Parameters for all gvrbot messages
-    06. gvrbot_gazebo
-        -> For control of RADBOT simulation
-    07. gvrbot_description
-        -> Includes sensor config files and basic descriptions of the frame to use in simulations
-    08. gvrbot_viz
-        -> For configuration of Rviz
-    09. gvrbot_navigation
-        -> For SLAM
-    10. gvrbot_cartographer_navigation
-        -> For SLAM using Google Cartographer
-    11. gvrbot_sensor_test
-        -> Converts point cloud to laser scan
-    12. gvrbot_web_server
-        -> Launches web server
-    13. kromekEx
-        -> Files for Kromek sensors
+    1. velodyne
+        --> Control for Velodyne Lidar Sensor
+        --> Pulled Straight from Velodyne Github (https://github.com/ros-drivers/velodyne)
+        --> Start-up Guide: http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16
 
-ROS Version: Melodic  
-Ubuntu Version: 16.04  
+    2. realsense
+        --> Control for Intel Realsense2 Depth Camera
+        --> Pulled Straight from Intel Github (https://github.com/IntelRealSense/realsense-ros)
+
+    3. gvrbot
+        --> 
+        -->
+
+    4. kromek
+        -->
+        --> 
 
 ## Initial Setup
-    1. Clone this repository
-    2. Install dependencies located below
-    3. Set Udev rule for Inertial Measurement Unit (Microstrain 3DM-GX5)
-    4. Follow Connection_guide.md
+    1. git clone <AY22_RADBOT repository>
+    2. git checkout development (Switch to development branch)
+    3. catkin_make (Compile Workspace)
+    4. Install dependencies listed below
+
+## Dependencies  
+    sudo apt-get install ros-melodic-velodyne
+    sudo apt-get install ros-melodic-realsense2-description
+
+## Running RADBOT
+    1. source devel/setup.bash (Adds workspace to ROS path)
+    2. roslaunch master.launch
+
+## Git Commands
+    1. git pull origin development (Pulls Github code to machine)
+    2. <Work on Code>
+    3. git add -A (Includes all files in workspace)
+    4. git commit -m (Include a commit message)
+    5. git push origin development (Pushes machine code to Github)
+    6. Use git token from Github as password
     
 ## Simulating RADBOT
     roslaunch gvrbot_gazebo gvrbot_world.launch
     roslaunch gvrbot_viz view_robot.launch
-
-## Running on actual robot
-    roslaunch master.launch
-
-## Dependencies 
-    velodyne_description: 
-    sudo apt-get install ros-melodic-velodyne
-    realsense2-description: 
-    sudo apt-get install ros-melodic-realsense2-description
 
 ## Velodyne Lidar (VLP16 Puck)
     IP Address: 192.168.1.201
@@ -57,6 +53,9 @@ Ubuntu Version: 16.04
     Data Port: 2368
     S/N: AE17711588
     MAC: 60-76-88-10-2d-44
+
+## Intel RealSense2 Depth Camera (D435)
+
 
 ## Connection Guide
 BRIX01 On-board Computer: RrcCmp2@
