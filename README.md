@@ -3,39 +3,39 @@ ROS Version: Melodic
 Ubuntu Version: 18.04 
 
 ## Package Descriptions
-    1. velodyne
+    1. Velodyne
         - Control for Velodyne Lidar Sensor
         - Pulled Straight from Velodyne Github: https://github.com/ros-drivers/velodyne
         - Start-up Guide: http://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20Velodyne%20VLP16
 
-    2. realsense
+    2. Realsense
         - Control for Intel Realsense2 Depth Camera
         - Pulled Straight from Intel Github: https://github.com/IntelRealSense/realsense-ros
 
-    3. gvrbot
+    3. Kromek
+        -
+        - 
+
+    4. gvrbot
         - Control for gvrbot 
         - Pulled Straight from West Point Github: https://github.com/westpoint-robotics/usma_gvrbot
 
-    4. kromek
-        -
-        - 
+    
 
 ## Initial Setup
     1. git clone <AY22_RADBOT repository>
     2. git checkout development (Switch to development branch)
-    3. Navigate to realsense rospkg and git clone from source
-    4. Navigate to velodyne rospkg and git clone from source
-    5. Navigate to gvrbot rospkg and git clone from source
     6. Install dependencies listed below
     7. catkin_make (Compile Workspace)
+    8. Highly Recommend installing VSCode or CLion
 
 ## Dependencies  
     sudo apt-get install ros-melodic-velodyne
     sudo apt-get install ros-melodic-velodyne-description
     sudo apt-get install ros-melodic-realsense2-camera
     sudo apt-get install ros-melodic-realsense2-description
-    sudo apt-get install ros-melodic-velodyne-teleop-twist-joy
-    sudo apt-get install ros-melodic-jackal-description
+    sudo apt-get install ros-melodic-teleop-twist-joy
+    sudo apt-get install ros-melodic-jackal-description (Google Cartographer)
 
 ## Running RADBOT
     1. source devel/setup.bash (Adds workspace to ROS path)
