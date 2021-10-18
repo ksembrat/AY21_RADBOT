@@ -33,9 +33,9 @@
 <!-- ======================== LAUNCH DEPENDENCIES ======================= -->
 
 <!-- SENSOR FILES -->
-<include if="$(arg run_depth)" file="src/realsense/realsense2_camera/launch/rs_camera.launch"/>
-<include if="$(arg run_lidar)" file="src/velodyne/velodyne_pointcloud/launch/VLP16_points.launch"/>
-<include if="$(arg run_kromek)" file="launch/kromek.launch"/>
+<include if="$(arg run_depth)" file="src/Realsense/realsense2_camera/launch/rs_camera.launch"/>
+<include if="$(arg run_lidar)" file="src/Velodyne/velodyne_pointcloud/launch/VLP16_points.launch"/>
+<include if="$(arg run_kromek)" file="launch/Kromek.launch"/>
 
 <!-- MAPPING FILES -->
 <group if="$(arg run_web_server)">
