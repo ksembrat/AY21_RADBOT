@@ -23,8 +23,11 @@ Ubuntu Version: 18.04
 ## Initial Setup
     1. git clone <AY22_RADBOT repository>
     2. git checkout development (Switch to development branch)
-    3. catkin_make (Compile Workspace)
-    4. Install dependencies listed below
+    3. Navigate to realsense rospkg and git clone from source
+    4. Navigate to velodyne rospkg and git clone from source
+    5. Navigate to gvrbot rospkg and git clone from source
+    6. Install dependencies listed below
+    7. catkin_make (Compile Workspace)
 
 ## Dependencies  
     sudo apt-get install ros-melodic-velodyne
