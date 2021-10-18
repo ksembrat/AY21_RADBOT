@@ -5,7 +5,7 @@
 <!-- ======================== MAIN ARGUMENTS ======================= -->
 
 <!-- SENSOR OPTIONS -->
-	<arg name="run_lidar" default="true"/>
+	<arg name="run_lidar" default="false"/>
 	<arg name="run_depth" default="true"/>
 	<arg name="run_kromek" default="false"/>
 
@@ -69,8 +69,8 @@
 
 <!-- RECORD TEMP BAG FILE 
  <node name="rosbag_record_ID" pkg="rosbag" type="record"
-        args="record -O /home/AY22_RADBOT/data/testing/temp/tf"/>
-</launch> -->
+        args="record -O /home/AY22_RADBOT/data/testing/temp/tf"/> -->
+</launch>
 
 <!-- ======================== ARCHIVE ======================= -->
 <!--
