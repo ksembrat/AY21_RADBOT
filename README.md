@@ -44,7 +44,7 @@ Ubuntu Version: 18.04
     1. git pull origin development (Pulls Github code to machine)
     2. <Work on Code>
     3. git add -A (Includes all files in workspace)
-    4. git commit -m (Include a commit message)
+    4. git commit -m "Message"
     5. git push origin development (Pushes machine code to Github)
     6. Use git token from Github as password
     
@@ -61,7 +61,9 @@ Ubuntu Version: 18.04
     MAC: 60-76-88-10-2d-44
 
 ## Intel RealSense2 Depth Camera (D435)
-    S/N: 9432207281
+    S/N: 943222072817
+    Physical Port: 2-1.1-6
+    Product ID: 0x0B3A
 
 ## Connection Guide
 BRIX01 On-board Computer: RrcCmp2@

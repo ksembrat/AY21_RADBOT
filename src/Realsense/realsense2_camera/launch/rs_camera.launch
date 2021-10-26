@@ -1,5 +1,5 @@
 <launch>
-  <arg name="serial_no"           default=""/>
+  <arg name="serial_no"           default="943222072817"/>
   <arg name="usb_port_id"         default=""/>
   <arg name="device_type"         default=""/>
   <arg name="json_file_path"      default=""/>
@@ -14,8 +14,8 @@
   <arg name="fisheye_height"      default="-1"/>
   <arg name="enable_fisheye"      default="false"/>
 
-  <arg name="depth_width"         default="-1"/>
-  <arg name="depth_height"        default="-1"/>
+  <arg name="depth_width"         default="640"/>
+  <arg name="depth_height"        default="480"/>
   <arg name="enable_depth"        default="true"/>
 
   <arg name="confidence_width"    default="-1"/>
@@ -30,13 +30,13 @@
   <arg name="enable_infra2"       default="false"/>
   <arg name="infra_rgb"           default="false"/>
 
-  <arg name="color_width"         default="-1"/>
-  <arg name="color_height"        default="-1"/>
+  <arg name="color_width"         default="640"/>
+  <arg name="color_height"        default="480"/>
   <arg name="enable_color"        default="true"/>
 
   <arg name="fisheye_fps"         default="-1"/>
   <arg name="depth_fps"           default="-1"/>
-  <arg name="infra_fps"           default="30"/>
+  <arg name="infra_fps"           default="90"/>
   <arg name="color_fps"           default="-1"/>
   <arg name="gyro_fps"            default="-1"/>
   <arg name="accel_fps"           default="-1"/>
@@ -44,7 +44,7 @@
   <arg name="enable_accel"        default="false"/>
 
   <arg name="enable_pointcloud"         default="true"/>
-  <arg name="pointcloud_texture_stream" default="RS2_STREAM_COLOR"/>
+  <arg name="pointcloud_texture_stream" default="RS2_STREAM_ANY"/>
   <arg name="pointcloud_texture_index"  default="0"/>
   <arg name="allow_no_texture_points"   default="false"/>
   <arg name="ordered_pc"                default="false"/>
