@@ -20,14 +20,12 @@ Ubuntu Version: 18.04
         - Control for gvrbot 
         - Pulled Straight from West Point Github: https://github.com/westpoint-robotics/usma_gvrbot
 
-    
-
 ## Initial Setup
     1. git clone <AY22_RADBOT repository>
     2. git checkout development (Switch to development branch)
-    6. Install dependencies listed below
-    7. catkin_make (Compile Workspace)
-    8. Highly Recommend installing VSCode or CLion
+    3. Install dependencies listed below
+    4. catkin_make (Compile Workspace)
+    5. Highly Recommend installing VSCode or CLion
 
 ## Dependencies  
     sudo apt-get install ros-melodic-velodyne
@@ -36,6 +34,7 @@ Ubuntu Version: 18.04
     sudo apt-get install ros-melodic-realsense2-description
     sudo apt-get install ros-melodic-teleop-twist-joy
     sudo apt-get install ros-melodic-jackal-description (Google Cartographer)
+    sudo apt-get update
 
 ## Running RADBOT
     1. source devel/setup.bash (Adds workspace to ROS path)
@@ -62,7 +61,7 @@ Ubuntu Version: 18.04
     MAC: 60-76-88-10-2d-44
 
 ## Intel RealSense2 Depth Camera (D435)
-
+    S/N: 9432207281
 
 ## Connection Guide
 BRIX01 On-board Computer: RrcCmp2@
