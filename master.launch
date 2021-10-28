@@ -17,25 +17,25 @@
     <arg name="run_cartographer" default="false"/>
 
 <!-- VISUALIZATION OPTIONS  -->
-    <arg name="run_rviz" default="false"/> 
-
-<!-- ======================== TRANSFORMS ======================= -->
-
-<!--<node pkg="tf2_ros" type="static_transform_publisher" name="base_link_mavrosFix_broadcaster" args="0 0 0 0 0 0 1 local_origin_ned fcu" /> 
--->
-<!-- TranBaseLink - Radar -->
-<!-- <node pkg="tf" type="static_transform_publisher" name="base_link_ti_mmwave_pcl_broadcaster" args="0 0 0 0 0 0 1 base_link ti_mmwave_pcl 100" />
--->
-<!-- TranBaseLink - Realsense -->
-<!-- <node pkg="tf" type="static_transform_publisher" name="base_link_realsenseD435_broadcaster" args="0.180 0.0175 -0.1075 -0.5 -0.5 0.5 0.5 base_link d435 100" />
- -->
+    <arg name="run_rviz" default="true"/> 
 
 <!-- ======================== LAUNCH DEPENDENCIES ======================= -->
 
 <!-- SENSOR FILES -->
-<include if="$(arg run_depth)" file="src/Realsense/realsense2_camera/launch/rs_camera.launch"/>
-<include if="$(arg run_lidar)" file="src/Velodyne/velodyne_pointcloud/launch/VLP16_points.launch"/>
-<include if="$(arg run_kromek)" file="launch/Kromek.launch"/>
+<group if="$(arg run_lidar)">
+    <include file="src/Velodyne/velodyne_pointcloud/launch/VLP16_points.launch"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="lidar_transform_broadcaster" args="-0.29 0 0.88 0 0 -0.7071 0.7071 base_link velodyne" />
+</group>
+
+<group if="$(arg run_depth)">
+    <include file="src/Realsense/realsense2_camera/launch/rs_camera.launch"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="depth_transform_broadcaster" args="-0.21 0 0.66 0 0 0 1 base_link camera_link" />
+</group>
+
+<group if="$(arg run_kromek)">
+    <include file="src/Kromek/launch/Kromek.launch"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="kromek_transform_broadcaster" args="0 0 0 0 0 0 1 base_link kromek" />
+</group>
 
 <!-- MAPPING FILES -->
 <group if="$(arg run_web_server)">
@@ -52,7 +52,7 @@
 
 <!-- VISUALIZATION FILES -->
 <group if="$(arg run_rviz)">
-    <node name="rviz" pkg="rviz" type="rviz"  args="-d /home/AY22_RADBOT/rviz/gmapping.rviz" output="screen"/>
+    <node name="rviz" pkg="rviz" type="rviz"  args="-d /home/flyingunderground/AY22_RADBOT/rviz/RADBOT.rviz" output="screen"/>
     <!--
     <arg name="config" default="base" />
     <arg name="env_runner" value="$(eval 'env_run' if not optenv('OS', 'unknown').lower().startswith('windows') else 'env_run.bat')" /> 

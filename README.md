@@ -1,6 +1,6 @@
 # AY22_RADBOT
-ROS Version: Melodic  
-Ubuntu Version: 18.04 
+    ROS Version: Melodic  
+    Ubuntu Version: 18.04 
 
 ## Package Descriptions
     1. Velodyne
@@ -13,7 +13,7 @@ Ubuntu Version: 18.04
         - Pulled Straight from Intel Github: https://github.com/IntelRealSense/realsense-ros
 
     3. Kromek
-        -
+        - Control for Kromek Radiation Detector
         - 
 
     4. gvrbot
@@ -66,13 +66,18 @@ Ubuntu Version: 18.04
     Product ID: 0x0B3A
 
 ## Connection Guide
+    Velodyne Lidar
+        - Plug USB adapter into a USB hub which is then connected to a Jetson Nano
+        - Manually Assign USB hub connection the ip address 192.168.1.111/24 (DGW) similar to the velodyne start-up guide
+        - Default frame in rviz is /velodyne
+
 BRIX01 On-board Computer: RrcCmp2@
     1. Connect to GVRBOT wifi
         Pass: modern0325
     2. Ping 192.168.0.101
         Wait until connected
     3. ssh gvrbot@192.168.0.101
-        pass: modern
+        pass: modern(recommended) 
     4. New Command line
         export ROS_MASTER_URI=http://192.168.0.101:11311
         ifconfig
