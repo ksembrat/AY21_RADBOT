@@ -5,19 +5,20 @@
 <!-- ======================== MAIN ARGUMENTS ======================= -->
 
 <!-- SENSOR OPTIONS -->
-	<arg name="run_lidar" default="true"/>
-	<arg name="run_depth" default="true"/>
+	<arg name="run_lidar" default="false"/>
+    <arg name="run_imu" default="true"/>
+	<!-- <arg name="run_depth" default="false"/> -->
 	<arg name="run_kromek" default="false"/>
 
 <!-- CONTROL OPTIONS -->
     <arg name="run_teleop" default="false"/>
 
-<!-- MAPPING OPTIONS -->
+<!-- MAPPING OPTIONS -->    <node pkg="tf2_ros" type="static_transform_publisher" name="imu_transform_broadcaster" args="-0.29 0 0.88 0 0 -0.7071 0.7071 base_link velodyne" />
     <arg name="run_web_server" default="false"/>
-    <arg name="run_cartographer" default="false"/>
+    <arg name="run_ATE" default="false"/>
 
 <!-- VISUALIZATION OPTIONS  -->
-    <arg name="run_rviz" default="true"/> 
+    <arg name="run_rviz" default="false"/> 
 
 <!-- ======================== LAUNCH DEPENDENCIES ======================= -->
 
@@ -27,10 +28,16 @@
     <node pkg="tf2_ros" type="static_transform_publisher" name="lidar_transform_broadcaster" args="-0.29 0 0.88 0 0 -0.7071 0.7071 base_link velodyne" />
 </group>
 
+<group if="$(arg run_imu)">
+    <include file="src/Microstrain/microstrain_inertial_driver/launch/microstrain.launch"/>
+</group>
+
+<!--
 <group if="$(arg run_depth)">
     <include file="src/Realsense/realsense2_camera/launch/rs_camera.launch"/>
     <node pkg="tf2_ros" type="static_transform_publisher" name="depth_transform_broadcaster" args="-0.21 0 0.66 0 0 0 1 base_link camera_link" />
-</group>
+</group> 
+-->
 
 <group if="$(arg run_kromek)">
     <include file="src/Kromek/launch/Kromek.launch"/>
@@ -43,7 +50,7 @@
     <param name="address" value="10.212.149.70 "/>
 </group>
 
-<group if="$(arg run_cartographer)">
+<group if="$(arg run_ATE)">
 </group>
 
 <!-- CONTROL FILES -->

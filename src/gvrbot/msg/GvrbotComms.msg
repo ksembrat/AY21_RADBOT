@@ -1,1 +1,0 @@
-bool comms_lost
