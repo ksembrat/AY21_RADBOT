@@ -1,0 +1,6 @@
+ate/rtk/drivers/handheld_controller/joystick_drivers/ps3joy
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ps3joy/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ps3joy/lib/pkgconfig/ps3joy.pc /home/flyingunderground/ros/AY22_RADBOT/devel/lib/pkgconfig/ps3joy.pc
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ps3joy/lib/ps3joy/sixpair /home/flyingunderground/ros/AY22_RADBOT/devel/lib/ps3joy/sixpair
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ps3joy/share/ps3joy/cmake/ps3joyConfig-version.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/ps3joy/cmake/ps3joyConfig-version.cmake
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ps3joy/share/ps3joy/cmake/ps3joyConfig.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/ps3joy/cmake/ps3joyConfig.cmake

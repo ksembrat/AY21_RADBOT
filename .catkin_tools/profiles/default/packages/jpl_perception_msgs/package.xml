@@ -1,0 +1,16 @@
+<package format="2">
+  <name>jpl_perception_msgs</name>
+  <version>0.1.0</version>
+  <description>
+    JPL perception messages
+  </description>
+  <author email="jeremy.nash@jpl.nasa.gov">Jeremy Nash</author>
+  <maintainer email="jeremy.nash@jpl.nasa.gov">Jeremy Nash</maintainer>
+  <license>JPL</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+</package>

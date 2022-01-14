@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>jaus_discovery</name>
+  <version>7.3.0</version>
+  <description>
+
+     jaus_discovery
+
+  </description>
+  <maintainer email="tgriffith@dcscorp.com">Tommy Griffith</maintainer>
+  <license>United States Government Purpose</license>
+  <license>DCS Corporation Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>jaus_common</depend>
+  <depend>jaus_component</depend>
+  <depend>roscpp</depend>
+</package>
+

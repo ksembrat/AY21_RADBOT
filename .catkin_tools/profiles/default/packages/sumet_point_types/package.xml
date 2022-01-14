@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>sumet_point_types</name>
+  <version>6.6.1</version>
+  <description>
+
+     Point Cloud point types used in SUMET, DSAT, MUER, and RTK. This is a
+     header-only package, except for one node that converts point clouds.
+
+  </description>
+  <maintainer email="preed@swri.org">P. J. Reed</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:swri/sumet_perception.git</url>
+
+  <license>United States Government Purpose</license>
+  <license>SwRI Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_export_depend>pcl_conversions</build_export_depend>
+  <depend>pcl_ros</depend>
+  <depend>roscpp</depend>
+  <depend>swri_roscpp</depend>
+  <build_export_depend>tf</build_export_depend>
+  <export/>
+</package>
+

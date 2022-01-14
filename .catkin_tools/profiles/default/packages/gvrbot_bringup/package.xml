@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>gvrbot_bringup</name>
+  <version>0.1.0</version>
+  <description>Launchfiles to start GVRBot companion computer.</description>
+  <maintainer email="dominic.larkin@westpoint.edu">Dominic Larkin</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://westpoint.edu/robotics</url>
+  <author email="dominic.larkin@westpoint.edu">Dominic Larkin</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <export>
+
+  </export>
+</package>

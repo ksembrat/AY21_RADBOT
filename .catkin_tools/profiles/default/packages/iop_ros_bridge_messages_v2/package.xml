@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>iop_ros_bridge_messages_v2</name>
+  <version>7.3.0</version>
+  <description>
+    ROS messages that mimmick the IOP V2.
+  </description>
+  <maintainer email="tgriffith@dcscorp.com">tgriffith@dcscorp.com</maintainer>
+  <license>United States Government Purpose</license>
+  <license>DCS Corporation Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <export>
+    <rosdoc config="rosdoc.yaml"/>
+  </export>
+</package>
+

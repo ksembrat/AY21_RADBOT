@@ -1,0 +1,8 @@
+ate/ate-vision/darknet_ros/gb_visual_detection_3d/darknet_ros_3d
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/lib/libdarknet_ros_3d.so /home/flyingunderground/ros/AY22_RADBOT/devel/lib/libdarknet_ros_3d.so
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/lib/pkgconfig/darknet_ros_3d.pc /home/flyingunderground/ros/AY22_RADBOT/devel/lib/pkgconfig/darknet_ros_3d.pc
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/lib/darknet_ros_3d/darknet3d_node /home/flyingunderground/ros/AY22_RADBOT/devel/lib/darknet_ros_3d/darknet3d_node
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/lib/darknet_ros_3d/darknet3d_listener_node /home/flyingunderground/ros/AY22_RADBOT/devel/lib/darknet_ros_3d/darknet3d_listener_node
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/share/darknet_ros_3d/cmake/darknet_ros_3dConfig.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/darknet_ros_3d/cmake/darknet_ros_3dConfig.cmake
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/darknet_ros_3d/share/darknet_ros_3d/cmake/darknet_ros_3dConfig-version.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/darknet_ros_3d/cmake/darknet_ros_3dConfig-version.cmake

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>velodyne_mc</name>
+  <version>4.1.0</version>
+  <description>
+     Velodyne Manual Calibration
+  </description>
+  <maintainer email="jonathan.d.petrosky.civ@mail.mil">Jon Petrosky</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:tardec/tardec_drivers.git</url>
+  <license>United States Department of Defense Official Use Only</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>pcl_ros</depend>
+  <depend>roscpp</depend>
+  <depend>tf</depend>
+  <depend>tf_conversions</depend>
+  <depend>eigen</depend>
+  <depend>velodyne_ll</depend>
+</package>
+

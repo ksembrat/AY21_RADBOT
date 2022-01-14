@@ -1,0 +1,6 @@
+ate/rtk/drivers/handheld_controller/joystick_drivers/joy
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/joy/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/joy/lib/pkgconfig/joy.pc /home/flyingunderground/ros/AY22_RADBOT/devel/lib/pkgconfig/joy.pc
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/joy/lib/joy/joy_node /home/flyingunderground/ros/AY22_RADBOT/devel/lib/joy/joy_node
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/joy/share/joy/cmake/joyConfig-version.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/joy/cmake/joyConfig-version.cmake
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/joy/share/joy/cmake/joyConfig.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/joy/cmake/joyConfig.cmake

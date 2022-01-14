@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>dsat_vms_health</name>
+  <version>7.1.1</version>
+  <description>
+
+     dsat_vms_health
+
+  </description>
+  <maintainer email="tgriffith@dcscorp.com">Tommy Griffith</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:dcs/dsat.git</url>
+
+  <license>United States Government Purpose</license>
+  <license>DCS Corporation Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>dsat_behavior_manager</depend>
+  <depend>dsat_common</depend>
+  <depend>dsat_ping</depend>
+  <depend>gps_common</depend>
+  <depend>marti_common_msgs</depend>
+  <depend>mototron_msgs</depend>
+  <depend>novatel_gps_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>safety_monitor_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>swri_yaml_util</depend>
+  <depend>tardec_msgs</depend>
+  <depend>rr_nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>yaml-cpp</depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>
+

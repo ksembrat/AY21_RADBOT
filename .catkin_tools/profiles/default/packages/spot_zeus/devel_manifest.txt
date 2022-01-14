@@ -1,0 +1,2 @@
+usma_gvrbot/gvrbot_platforms/spot_zeus
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/spot_zeus/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock

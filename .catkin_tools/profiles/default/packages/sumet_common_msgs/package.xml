@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>sumet_common_msgs</name>
+  <version>8.4.0</version>
+  <description>
+    Common ROS message types developed for the SUMET program
+    and the subsequent DSAT, MUER, and RTK programs.
+  </description>
+  <maintainer email="preed@swri.org">P. J. Reed</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:swri/sumet_messages.git</url>
+
+  <license>United States Government Purpose Rights</license>
+  <license>SwRI Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+    <rosdoc config="rosdoc.yaml"/>
+  </export>
+  <depend>geometry_msgs</depend>
+  <depend>marti_common_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>swri_roscpp</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>

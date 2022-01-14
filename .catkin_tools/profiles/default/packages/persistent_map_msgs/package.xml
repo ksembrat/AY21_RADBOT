@@ -1,0 +1,28 @@
+<package format="2">
+  <name>persistent_map_msgs</name>
+  <version>3.0.1</version>
+  <description>
+    persistent_map_msgs contains all the message and service definitions
+    required for the persistent_map package
+  </description>
+  <author>Jerry Towler</author>
+  <maintainer email="jtowler@swri.org">Jerry Towler</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:swri/persistent_map.git</url>
+
+  <license>Copyright SwRI</license>
+  <url></url>
+
+  <build_depend>message_generation</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>sumet_common_msgs</depend>
+  <exec_depend>message_runtime</exec_depend>
+  
+  <export>
+    <rosbag_migration_rule rule_file="rules/map_data.bmr"/>
+    <rosbag_migration_rule rule_file="rules/local_grid_map_1.bmr"/>
+    <rosbag_migration_rule rule_file="rules/local_grid_map_2.bmr"/>
+  </export>
+
+</package>

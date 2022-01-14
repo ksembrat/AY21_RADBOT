@@ -1,0 +1,5 @@
+ate/ate-sensors/ate-camera
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ate-camera/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ate-camera/lib/pkgconfig/ate-camera.pc /home/flyingunderground/ros/AY22_RADBOT/devel/lib/pkgconfig/ate-camera.pc
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ate-camera/share/ate-camera/cmake/ate-cameraConfig.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/ate-camera/cmake/ate-cameraConfig.cmake
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/ate-camera/share/ate-camera/cmake/ate-cameraConfig-version.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/ate-camera/cmake/ate-cameraConfig-version.cmake

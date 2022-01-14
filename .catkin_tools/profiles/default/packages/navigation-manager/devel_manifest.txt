@@ -1,0 +1,6 @@
+ate/ate-navigation/navigation-manager
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/navigation-manager/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/navigation-manager/lib/pkgconfig/navigation-manager.pc /home/flyingunderground/ros/AY22_RADBOT/devel/lib/pkgconfig/navigation-manager.pc
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/navigation-manager/lib/navigation-manager/navigation-manager_waypoint_manager_node /home/flyingunderground/ros/AY22_RADBOT/devel/lib/navigation-manager/navigation-manager_waypoint_manager_node
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/navigation-manager/share/navigation-manager/cmake/navigation-managerConfig-version.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/navigation-manager/cmake/navigation-managerConfig-version.cmake
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/navigation-manager/share/navigation-manager/cmake/navigation-managerConfig.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/navigation-manager/cmake/navigation-managerConfig.cmake

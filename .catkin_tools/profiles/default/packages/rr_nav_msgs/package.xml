@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rr_nav_msgs</name>
+  <version>0.1.2</version>
+  <description>Messages for communicating with the Robotic Research RR-N series navigation box.</description>
+
+  <maintainer email="jason.gassaway@swri.org">Jason Gassaway</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:swri/robotic_research_nav.git</url>
+
+  <author email="jgassaway@swri.org">Jason Gassaway</author>
+
+  <license>SwRI Proprietary</license>
+  <license>United States Government Purpose</license>
+  
+  <url type="website">https://dismount-git.datasys.swri.edu/swri/robotic_research_nav</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+
+</package>

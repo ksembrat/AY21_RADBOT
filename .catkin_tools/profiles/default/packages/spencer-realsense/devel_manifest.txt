@@ -1,0 +1,5 @@
+ate/ate-vision/spencer-realsense
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/spencer-realsense/cmake.lock /home/flyingunderground/ros/AY22_RADBOT/devel/./cmake.lock
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/spencer-realsense/lib/pkgconfig/spencer-realsense.pc /home/flyingunderground/ros/AY22_RADBOT/devel/lib/pkgconfig/spencer-realsense.pc
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/spencer-realsense/share/spencer-realsense/cmake/spencer-realsenseConfig-version.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/spencer-realsense/cmake/spencer-realsenseConfig-version.cmake
+/home/flyingunderground/ros/AY22_RADBOT/devel/.private/spencer-realsense/share/spencer-realsense/cmake/spencer-realsenseConfig.cmake /home/flyingunderground/ros/AY22_RADBOT/devel/share/spencer-realsense/cmake/spencer-realsenseConfig.cmake

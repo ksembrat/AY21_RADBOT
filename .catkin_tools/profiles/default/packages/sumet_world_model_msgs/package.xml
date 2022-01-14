@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>sumet_world_model_msgs</name>
+  <version>8.4.0</version>
+  <description>
+    ROS messages for the Southwest Reseach Institute World Model (ROS package
+    world_model), which was created for the SUMET project and subsequently
+    developed for the DSAT, MUER, and RTK projects.
+  </description>
+  <maintainer email="preed@swri.org">P. J. Reed</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:swri/sumet_messages.git</url>
+
+  <license>United States Government Purpose</license>
+  <license>SwRI Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>actionlib</depend>
+  <depend>actionlib_msgs</depend>
+  <depend>marti_common_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>sumet_perception_msgs</depend>
+  <depend>sumet_nav_msgs</depend>
+  <depend>sumet_common_msgs</depend>
+  <depend>swri_roscpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rndf_msgs</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <export>
+    <rosdoc config="rosdoc.yaml"/>
+  </export>
+</package>

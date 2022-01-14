@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>sumet_behavior_msgs</name>
+  <version>8.4.0</version>
+  <description>
+
+  The sumet_behavior_msgs package contains the definitions for messages and 
+  services related to the behavior_switch in the SUMET architecture.
+  
+  </description>
+  <maintainer email="jerry.towler@swri.org">Jerry Towler</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:swri/sumet_messages.git</url>
+
+  <license>United States Government Purpose</license>
+  <license>SwRI Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <depend>std_msgs</depend>
+  <depend>sumet_common_msgs</depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>
+

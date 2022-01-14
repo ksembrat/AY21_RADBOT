@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>jaus_common</name>
+  <version>7.3.0</version>
+  <description>
+
+     jaus_common
+
+  </description>
+  <maintainer email="tgriffith@dcscorp.com">Tommy Griffith</maintainer>
+  <license>United States Government Purpose</license>
+  <license>DCS Corporation Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
+

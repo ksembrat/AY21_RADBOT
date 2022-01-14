@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>dsat_behavior_manager</name>
+  <version>7.1.1</version>
+  <description>
+
+     dsat_behavior_manager
+
+  </description>
+  <maintainer email="tgriffith@dcscorp.com">tgriffith@dcscorp.com</maintainer>
+  <url type="repository">git@dismount-git.datasys.swri.edu:dcs/dsat.git</url>
+
+  <license>United States Government Purpose</license>
+  <license>DCS Corporation Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>qt_qmake</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>libqt_core</exec_depend>
+  <exec_depend>libqt_network</exec_depend>
+  <build_depend>libqt_dev</build_depend>
+  <depend>amas_convoy_interface</depend>
+  <depend>dsat_common</depend>
+  <depend>gps_common</depend>
+  <depend>iop_ros_bridge_messages_v2</depend>
+  <depend>nav_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>sumet_behavior_msgs</depend>
+  <depend>sumet_nav_msgs</depend>
+  <depend>sumet_world_model_msgs</depend>
+  <depend>swri_roscpp</depend>
+  <depend>tf</depend>
+  <depend>rqt_gui_cpp</depend>
+  <depend>rqt_gui</depend>
+  <depend>vaquero_msgs</depend>
+  <!--depend>bwask_msgs</depend> AMAS only -->
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>python-pyproj</exec_depend>
+  <exec_depend>rospy</exec_depend>
+</package>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<package format="2">
+  <name>iop_bridge_mobility</name>
+  <version>7.3.0</version>
+  <description>
+
+     iop_bridge_mobility
+
+  </description>
+  <maintainer email="tgriffith@dcscorp.com">Tommy Griffith</maintainer>
+  <license>United States Government Purpose</license>
+  <license>DCS Corporation Proprietary</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>boost</depend>
+  <depend>dsat_behavior_manager</depend>
+  <depend>dsat_vms_health</depend>
+  <depend>iop_messages_v2</depend>
+  <depend>iop_ros_bridge_messages_v2</depend>
+  <depend>jaus_common</depend>
+  <depend>jaus_component</depend>
+  <depend>marti_common_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>persistent_map_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>sumet_common_msgs</depend>
+  <depend>sumet_nav_msgs</depend>
+  <depend>sumet_world_model_msgs</depend>
+  <depend>swri_nav_msgs</depend>
+  <depend>swri_transform_util</depend>
+  <depend>swri_yaml_util</depend>
+  <depend>tf</depend>
+  <depend>visualization_msgs</depend>
+  <depend>yaml-cpp</depend>
+  <exec_depend>dsat_jaus2ros_diagnostics</exec_depend>
+</package>
+

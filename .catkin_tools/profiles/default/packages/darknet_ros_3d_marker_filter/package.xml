@@ -1,0 +1,11 @@
+<package format="2">
+  <name>darknet_ros_3d_marker_filter</name>
+  <version>1.0.0</version>
+  <description>
+  ATE Darknet ROS Message Filter 
+  </description>
+  <maintainer email="gavin.j.walters.ctr@mail.mil">Gavin Walters</maintainer>
+  <license>ToDo</license>
+  <depend>darknet_ros_msgs</depend>
+  <depend>gb_visual_detection_3d_msgs</depend>
+</package>
