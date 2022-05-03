@@ -16,3 +16,5 @@ This guide covers
 	rostopic list
 	"look for gvrbot topics (if you dont see them, it wont work)
 	roslaunch gvrbot xbox360_teleop.launch
+5. Connect to wireless IP via bowser. As a result, UI will pop up with the 2D map,
+	live camera vision and teleop options on left. 
